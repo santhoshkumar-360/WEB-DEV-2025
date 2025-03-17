@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Registration</title>
+  </head>
+  <body>
+    <h1><center>Register for Our Event</center></h1>
+    <center>
+      <form action="register_event.php" method="POST">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="phone">Phone:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          required
+        /><br /><br />
+        <label for="session">Choose Your Session:</label><br />
+        <select id="session" name="session" required>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option></select
+        ><br /><br />
+        <button type="submit">Register</button>
+      </form>
+    </center>
+  </body>
+</html>
